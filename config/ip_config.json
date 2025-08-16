@@ -1,0 +1,18 @@
+{
+      "version": 4,
+      "ihl": 5,
+      "DSField_ECN": 0,
+      "total_length": 28,
+      "id": 0,
+      "flags_fragoff": 0,
+      "ttl": 0,
+      "protocol": 1,
+      "headerChecksum": 0,
+      "sourceIP": "172.20.10.4",
+      "destIP": [ 
+        "8.8.8.8"
+    ]
+    
+    
+    
+}
