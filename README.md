@@ -4,7 +4,7 @@
 **WORK IN PROGRESS!**
 
 ## Current Features
--   **Single IP Traceroute, all threaded, done in seconds.
+-   **Single IP Traceroute, all threaded, done in seconds.<br>
     -> Single probes for every unique ttl send raw packets to destination IP
 
 ## Current Focus
@@ -21,4 +21,5 @@ Improvement: (simplified)<br>
 ->1.0 : **Hops*MAX_TIMEOUT_NOREPLY**<br>
 ->2.0 : **MAX_TIMEOUT_NOREPLY**
 
-The threaded version runs max for the timeout occuring while waiting for respond packages, which probably got dropped. (1-2s)
+The threaded version runs max for the timeout occuring while waiting for respond packages, which probably got dropped. (1-2s)<br>
+Version 1.0: [KaliTraceRoute](https://www.github.com/KaliKiu/packettraceroute)
