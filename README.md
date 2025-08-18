@@ -8,12 +8,12 @@
     -> Single probes for every unique ttl send raw packets to destination IP
 
 ## Current Focus
-- **Adding Json file output Feature
-- **Better error handling (exceptions etc)
-- **Multi ip scan feature 
-- **Multi scan single ip
-- **ICMP respond packet parser
-- **Addition of cmake
+- **Adding Json file output Feature**
+- **Better error handling (exceptions etc)**
+- **Multi ip scan feature**
+- **Multi scan single ip**
+- **ICMP respond packet parser**
+- **Addition of cmake**
 ---
 
 This is version 2.0 of my traceroute project, which main focus is on improving the run time of sending/waiting for packets. 
