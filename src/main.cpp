@@ -11,24 +11,27 @@
 
 //
 int main(){
-    std::vector<std::string> route;
-    std::vector<std::thread> probes;
-    std::mutex route_mutex;
 
-    //meow
-    for(uint8_t ttl = 1; ttl<30; ttl++){
-        probes.emplace_back(Probe::probe,ttl,0,std::ref(route),std::ref(route_mutex));
-        std::this_thread::sleep_for(std::chrono::milliseconds(5));
-    }
+    const uint32_t IP_ADDRESS_COUNT = 2;
+    //per ip, 100 probes
+    for(int i = 0; i=IP_ADDRESS_COUNT-1;i++){
+        std::vector<std::string> route;
+        std::vector<std::thread> probes;
+        std::mutex route_mutex; 
 
-    //wait for all threads to finish   
-    for(auto &t : probes){
-        t.join();
+        for(uint8_t ttl = 1; ttl<100; ttl++){
+            probes.emplace_back(Probe::probe,ttl,i,std::ref(route),std::ref(route_mutex));
+            std::this_thread::sleep_for(std::chrono::milliseconds(5));
+        }
+        //wait for all threads to finish   
+        for(auto &t : probes){
+            t.join();
+        }
+        for(std::string r :route){
+            std::cout<<"\n"<<r;
+        }
+        std::cout <<"\nAll joined";
     }
-    for(std::string r :route){
-        std::cout<<"\n"<<r;
-    }
-    std::cout <<"\nAll joined";
 }
 
 
