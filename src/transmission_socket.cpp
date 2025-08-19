@@ -63,7 +63,7 @@ std::vector<uint8_t> Socket::rcvPacket(Packet::ipheader* ippointer,uint8_t& ttl,
             perror("select");return {};
         } else if (ret == 0) {
             // Timeout, no data available
-            printf("\nTimeout: no data received in %dseconds\n",timeout.tv_sec);
+            printf("\nTimeout: no data received in %ldseconds\n",timeout.tv_sec);
             //quit waiting for probe response
             char ipStr[INET_ADDRSTRLEN] = "Error_hop";
             Probe::addIP(ipStr,route,route_mutex);
