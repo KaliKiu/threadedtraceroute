@@ -1,5 +1,5 @@
 # threadedtraceroute
---**THIS REPOSITORY IS FOR DOCUMENTATION PURPOSES**-- (dont use this code, its ass)
+--**THIS REPOSITORY IS FOR DOCUMENTATION PURPOSES**--
 
 **WORK IN PROGRESS!**
 
