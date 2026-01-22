@@ -1,4 +1,4 @@
-# threadedtraceroute
+# PacketTraceroute
 --**THIS REPOSITORY IS FOR DOCUMENTATION PURPOSES**--
 
 **WORK IN PROGRESS!**
